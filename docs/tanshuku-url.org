@@ -1,0 +1,12 @@
+#+TITLE: 短縮URL
+
+* 短縮URL
+
+** 文書ナビゲーション
+
+- [[file:index.org][ホーム]]
+
+** 短縮URL
+
+- ホーム http://prt.nu/0/simei
+

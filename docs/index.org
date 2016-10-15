@@ -1,0 +1,12 @@
+# -*- mode: org -*-
+#+TITLE: ホーム
+
+* ホーム
+
+- [[file:tanshuku-url.org][短縮URL]]
+- [[file:matizukuri.org][街作りTips]]
+- [[file:sisetu-kyouka-tips.org][施設強化Tips]]
+- [[file:sisetu-sinka-tips.org][施設進化Tips]]
+- [[file:sisetu-sinka-katarogu.org][施設進化カタログ]]
+- [[file:mission.org][ミッション情報]]
+- [[file:senjutu-tips.org][戦術Tips]]
