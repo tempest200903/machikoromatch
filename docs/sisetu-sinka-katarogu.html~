@@ -1,65 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>施設進化カタログ</title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-<meta name="title" content="施設進化カタログ"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2016-10-15T23:09+0900"/>
-<meta name="author" content="simei"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<!-- 2016-10-16 Sun 15:00 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="simei" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  html { font-family: Times, serif; font-size: 12pt; }
   .title  { text-align: center; }
-  .todo   { color: red; }
+  .todo   { font-family: monospace; color: red; }
   .done   { color: green; }
-  .tag    { background-color: #add8e6; font-weight:normal }
-  .target { }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
-  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
-  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
-  .center {margin-left:auto; margin-right:auto; text-align:center;}
-  p.verse { margin-left: 3% }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
   pre {
-	border: 1pt solid #AEBDCC;
-	background-color: #F3F5F7;
-	padding: 5pt;
-	font-family: courier, monospace;
-        font-size: 90%;
-        overflow:auto;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
   }
-  table { border-collapse: collapse; }
-  td, th { vertical-align: top;  }
-  th.right  { text-align:center;  }
-  th.left   { text-align:center;   }
-  th.center { text-align:center; }
-  td.right  { text-align:right;  }
-  td.left   { text-align:left;   }
-  td.center { text-align:center; }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
   dt { font-weight: bold; }
-  div.figure { padding: 0.5em; }
-  div.figure p { text-align: center; }
-  div.inlinetask {
-    padding:10px;
-    border:2px solid gray;
-    margin:10px;
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
     background: #ffffcc;
   }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
   textarea { overflow-x: auto; }
-  .linenr { font-size:smaller }
-  .code-highlighted {background-color:#ffff00;}
-  .org-info-js_info-navigation { border-style:none; }
-  #org-info-js_console-label { font-size:10px; font-weight:bold;
-                               white-space:nowrap; }
-  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
-                                 font-weight:bold; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -106,83 +140,254 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
-
 </head>
 <body>
-
-<div id="preamble">
-
-</div>
-
 <div id="content">
 <h1 class="title">施設進化カタログ</h1>
-
-
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1 施設進化カタログ</a></li>
+<li><a href="#sec-1">1. 施設進化カタログ</a>
+<ul>
+<li><a href="#sec-1-1">1.1. 文書ナビゲーション</a></li>
+<li><a href="#sec-1-2">1.2. 進化前施設、</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-1" class="outline-2">
+<div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1"><span class="section-number-2">1</span> 施設進化カタログ</h2>
 <div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> 文書ナビゲーション</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><a href="index.html">ホーム</a>
+</li>
+</ul>
+</div>
+</div>
 
-
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> 進化前施設、</h3>
+<div class="outline-text-3" id="text-1-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <thead>
-<tr><th scope="col" class="left">進化前施設</th><th scope="col" class="left">進化後施設</th><th scope="col" class="left">素材</th></tr>
+<tr>
+<th scope="col" class="left">進化前施設</th>
+<th scope="col" class="left">進化後施設</th>
+<th scope="col" class="left">素材</th>
+</tr>
 </thead>
 <tbody>
-<tr><td class="left">Aイチョウ林</td><td class="left">Sヒノキ林</td><td class="left">Aイチョウ林3、Bマンション1、B豪邸1</td></tr>
-<tr><td class="left">Aカラオケビル</td><td class="left">A駐車場</td><td class="left">Bマンション紫2、B豪邸紫2</td></tr>
-<tr><td class="left">Aクリーニング店</td><td class="left">A駐車場</td><td class="left">Bマンション緑2、B豪邸緑2</td></tr>
-<tr><td class="left">Aステーキハウス</td><td class="left">A駐車場</td><td class="left">Bマンション赤2、B豪邸赤2</td></tr>
-<tr><td class="left">Aスナック</td><td class="left">A駐車場</td><td class="left">Aスナック(900G)、Bマンション赤(150G)2、B豪邸赤(150G)2</td></tr>
-<tr><td class="left">Aディスカウントショップ</td><td class="left">A駐車場</td><td class="left">Bマンション緑2、B豪邸緑2</td></tr>
-<tr><td class="left">Aバーベキュー場</td><td class="left">A駐車場</td><td class="left"></td></tr>
-<tr><td class="left">Aホウレンソウ畑</td><td class="left">Aトマト畑</td><td class="left">Aホウレンソウ畑1、Cアパート青1、C一軒家1</td></tr>
-<tr><td class="left">A新聞社</td><td class="left">Sラジオ局</td><td class="left">A新聞社3、Bマンション1、B豪邸1</td></tr>
-<tr><td class="left">A駐車場</td><td class="left">S立体駐車場</td><td class="left">A駐車場5</td></tr>
-<tr><td class="left">Bみかん園</td><td class="left">Aいちご園</td><td class="left">Bみかん園2、Cアパート1、C一軒家1</td></tr>
-<tr><td class="left">Bカエデ林</td><td class="left">Aイチョウ林</td><td class="left">Bカエデ林2、Cアパート青1、C一軒家青1</td></tr>
-<tr><td class="left">Bゲームセンター</td><td class="left">A大型ゲームセンター</td><td class="left">Bゲームセンター2、アパート紫1、一軒家紫1</td></tr>
-<tr><td class="left">Bスイーツカフェ</td><td class="left">B空き地★</td><td class="left">Cアパート2、C一軒家1</td></tr>
-<tr><td class="left">Bトイショップ</td><td class="left">B空き地★</td><td class="left">Cアパート2、C一軒家1</td></tr>
-<tr><td class="left">Bドーナツショップ</td><td class="left">B空き地★</td><td class="left">Cアパート2、C一軒家1</td></tr>
-<tr><td class="left">Bボクシングジム</td><td class="left">B空き地★</td><td class="left">Cアパート2、C一軒家1</td></tr>
-<tr><td class="left">Bレンゲ畑</td><td class="left">Aカーネーション畑</td><td class="left">Bレンゲ畑2、Cアパート1、C一軒家1</td></tr>
-<tr><td class="left">B古本屋</td><td class="left">A古本チェーン</td><td class="left">古本屋2、アパート、一軒家</td></tr>
-<tr><td class="left">B牧場</td><td class="left">A放牧場</td><td class="left">B牧場2、Cアパート青1、C一軒家青1</td></tr>
-<tr><td class="left">B空き地★</td><td class="left">A駐車場</td><td class="left">B空き地5</td></tr>
-<tr><td class="left">B釣り堀</td><td class="left">B空き地★</td><td class="left">アパート紫2、一軒家紫1</td></tr>
-<tr><td class="left">B靴屋</td><td class="left">B空き地★</td><td class="left">Cアパート(緑)2、C一軒家(緑)</td></tr>
-<tr><td class="left">Cおもちゃ屋</td><td class="left">Bトイショップ</td><td class="left">Cおもちゃ屋、Dアパート、D平屋</td></tr>
-<tr><td class="left">Cカブ畑</td><td class="left">Bネギ畑</td><td class="left">Cカブ畑1、D古アパート青1、D平屋青1</td></tr>
-<tr><td class="left">Cファミレス</td><td class="left">B空き地</td><td class="left">Cアパート3、C一軒家2</td></tr>
-<tr><td class="left">Cボウリング場</td><td class="left">B空き地</td><td class="left">Cアパート3、C一軒家2</td></tr>
-<tr><td class="left">Cリンゴ園</td><td class="left">Bみかん園</td><td class="left">D古アパート青1、D平屋青1</td></tr>
-<tr><td class="left">C喫茶店</td><td class="left">Bスイーツカフェ</td><td class="left">C喫茶店1、D古アパート1、D平屋1</td></tr>
-<tr><td class="left">C花畑</td><td class="left">Bレンゲ畑</td><td class="left">C花畑1、D古アパート青1、D平屋青1</td></tr>
-<tr><td class="left">C雑木林</td><td class="left">Bカエデ林</td><td class="left">C雑木林1、D古アパート1、D平屋1</td></tr>
+<tr>
+<td class="left">Aイチョウ林</td>
+<td class="left">Sヒノキ林</td>
+<td class="left">Aイチョウ林3、Bマンション1、B豪邸1</td>
+</tr>
+
+<tr>
+<td class="left">Aカラオケビル</td>
+<td class="left">A駐車場</td>
+<td class="left">Bマンション紫2、B豪邸紫2</td>
+</tr>
+
+<tr>
+<td class="left">Aクリーニング店</td>
+<td class="left">A駐車場</td>
+<td class="left">Bマンション緑2、B豪邸緑2</td>
+</tr>
+
+<tr>
+<td class="left">Aステーキハウス</td>
+<td class="left">A駐車場</td>
+<td class="left">Bマンション赤2、B豪邸赤2</td>
+</tr>
+
+<tr>
+<td class="left">Aスナック</td>
+<td class="left">A駐車場</td>
+<td class="left">Aスナック(900G)、Bマンション赤(150G)2、B豪邸赤(150G)2</td>
+</tr>
+
+<tr>
+<td class="left">Aディスカウントショップ</td>
+<td class="left">A駐車場</td>
+<td class="left">Bマンション緑2、B豪邸緑2</td>
+</tr>
+
+<tr>
+<td class="left">Aバーベキュー場</td>
+<td class="left">A駐車場</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Aホウレンソウ畑</td>
+<td class="left">Aトマト畑</td>
+<td class="left">Aホウレンソウ畑1、Cアパート青1、C一軒家1</td>
+</tr>
+
+<tr>
+<td class="left">A新聞社</td>
+<td class="left">Sラジオ局</td>
+<td class="left">A新聞社3、Bマンション1、B豪邸1</td>
+</tr>
+
+<tr>
+<td class="left">A駐車場</td>
+<td class="left">S立体駐車場</td>
+<td class="left">A駐車場5</td>
+</tr>
+
+<tr>
+<td class="left">Bみかん園</td>
+<td class="left">Aいちご園</td>
+<td class="left">Bみかん園2、Cアパート1、C一軒家1</td>
+</tr>
+
+<tr>
+<td class="left">Bカエデ林</td>
+<td class="left">Aイチョウ林</td>
+<td class="left">Bカエデ林2、Cアパート青1、C一軒家青1</td>
+</tr>
+
+<tr>
+<td class="left">Bゲームセンター</td>
+<td class="left">A大型ゲームセンター</td>
+<td class="left">Bゲームセンター2、アパート紫1、一軒家紫1</td>
+</tr>
+
+<tr>
+<td class="left">Bスイーツカフェ</td>
+<td class="left">B空き地★</td>
+<td class="left">Cアパート2、C一軒家1</td>
+</tr>
+
+<tr>
+<td class="left">Bトイショップ</td>
+<td class="left">B空き地★</td>
+<td class="left">Cアパート2、C一軒家1</td>
+</tr>
+
+<tr>
+<td class="left">Bドーナツショップ</td>
+<td class="left">B空き地★</td>
+<td class="left">Cアパート2、C一軒家1</td>
+</tr>
+
+<tr>
+<td class="left">Bボクシングジム</td>
+<td class="left">B空き地★</td>
+<td class="left">Cアパート2、C一軒家1</td>
+</tr>
+
+<tr>
+<td class="left">Bレンゲ畑</td>
+<td class="left">Aカーネーション畑</td>
+<td class="left">Bレンゲ畑2、Cアパート1、C一軒家1</td>
+</tr>
+
+<tr>
+<td class="left">B古本屋</td>
+<td class="left">A古本チェーン</td>
+<td class="left">古本屋2、アパート、一軒家</td>
+</tr>
+
+<tr>
+<td class="left">B牧場</td>
+<td class="left">A放牧場</td>
+<td class="left">B牧場2、Cアパート青1、C一軒家青1</td>
+</tr>
+
+<tr>
+<td class="left">B空き地★</td>
+<td class="left">A駐車場</td>
+<td class="left">B空き地5</td>
+</tr>
+
+<tr>
+<td class="left">B釣り堀</td>
+<td class="left">B空き地★</td>
+<td class="left">アパート紫2、一軒家紫1</td>
+</tr>
+
+<tr>
+<td class="left">B靴屋</td>
+<td class="left">B空き地★</td>
+<td class="left">Cアパート(緑)2、C一軒家(緑)</td>
+</tr>
+
+<tr>
+<td class="left">Cおもちゃ屋</td>
+<td class="left">Bトイショップ</td>
+<td class="left">Cおもちゃ屋、Dアパート、D平屋</td>
+</tr>
+
+<tr>
+<td class="left">Cカブ畑</td>
+<td class="left">Bネギ畑</td>
+<td class="left">Cカブ畑1、D古アパート青1、D平屋青1</td>
+</tr>
+
+<tr>
+<td class="left">Cファミレス</td>
+<td class="left">B空き地</td>
+<td class="left">Cアパート3、C一軒家2</td>
+</tr>
+
+<tr>
+<td class="left">Cボウリング場</td>
+<td class="left">B空き地</td>
+<td class="left">Cアパート3、C一軒家2</td>
+</tr>
+
+<tr>
+<td class="left">Cリンゴ園</td>
+<td class="left">Bみかん園</td>
+<td class="left">D古アパート青1、D平屋青1</td>
+</tr>
+
+<tr>
+<td class="left">C喫茶店</td>
+<td class="left">Bスイーツカフェ</td>
+<td class="left">C喫茶店1、D古アパート1、D平屋1</td>
+</tr>
+
+<tr>
+<td class="left">C花畑</td>
+<td class="left">Bレンゲ畑</td>
+<td class="left">C花畑1、D古アパート青1、D平屋青1</td>
+</tr>
+
+<tr>
+<td class="left">C雑木林</td>
+<td class="left">Bカエデ林</td>
+<td class="left">C雑木林1、D古アパート1、D平屋1</td>
+</tr>
 </tbody>
 </table>
-
 </div>
 </div>
 </div>
-
-<div id="postamble">
-<p class="date">Date: 2016-10-15T23:09+0900</p>
+</div>
+<div id="postamble" class="status">
 <p class="author">Author: simei</p>
-<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
-<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
-
+<p class="date">Created: 2016-10-16 Sun 15:00</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
