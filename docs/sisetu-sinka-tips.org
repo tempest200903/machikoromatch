@@ -1,0 +1,4 @@
+#+SETUPFILE: org-notes-style/setupfile.org
+#+TITLE: 施設進化Tips
+
+* 施設進化Tips

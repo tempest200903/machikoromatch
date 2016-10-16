@@ -1,0 +1,4 @@
+#+SETUPFILE: org-notes-style/setupfile.org
+#+TITLE: 戦術Tips
+
+* 戦術Tips

@@ -1,5 +1,5 @@
 # -*- mode: org -*-
-#+SETUPFILE: ../../org-html-themes/setup/theme-readtheorg-local.setup
+#+SETUPFILE: org-notes-style/setupfile.org
 #+TITLE: ミッション情報
 
 * ミッション情報
@@ -16,6 +16,6 @@
 
 ジェラートショップ
 
-***** マチコのお願い3
+**** マチコのお願い3
 
 「役場を立てる」

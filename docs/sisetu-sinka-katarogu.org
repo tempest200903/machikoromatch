@@ -1,5 +1,5 @@
 #+TITLE: 施設進化カタログ
-#+SETUPFILE: ../../org-html-themes/setup/theme-readtheorg-local.setup
+#+SETUPFILE: org-notes-style/setupfile.org
 
 * 施設進化カタログ
 
