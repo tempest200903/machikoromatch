@@ -1,4 +1,5 @@
 #+TITLE: 短縮URL
+#+SETUPFILE: ../../org-html-themes/setup/theme-readtheorg-local.setup
 
 * 短縮URL
 
