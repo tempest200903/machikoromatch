@@ -1,9 +1,5 @@
 # -*- mode: org -*-
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/fniessen/org-html-themes/master/styles/readtheorg/css/htmlize.css"/>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/fniessen/org-html-themes/master/styles/readtheorg/css/readtheorg.css"/>
-#+HTML_HEAD: <script src="https://raw.githubusercontent.com/fniessen/org-html-themes/master/styles/readtheorg/js/readtheorg.js"></script>
-#+COMMENT: type="text/javascript" を外した理由は http://testcording.com/?p=1259 ブラウザがデータをロードする際に脆弱性があるそうで、セキュリティ重視のため弾いてるようです。
-#+COMMENT: http://thr3a.hatenablog.com/entry/20140219/1392804136
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles/all.css" />
 
 #+TITLE: example
 

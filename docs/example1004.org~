@@ -1,9 +1,0 @@
-# -*- mode: org -*-
-#+SETUPFILE: ../../org-html-themes/setup/theme-readtheorg-local.setup
-#+COMMENT: cf. https://github.com/fniessen/org-html-themes
-
-#+TITLE: example
-
-* example
-
-** 文書ナビゲーション
