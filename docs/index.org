@@ -1,5 +1,5 @@
 # -*- mode: org -*-
-#+SETUPFILE: ../../org-html-themes/setup/theme-readtheorg-local.setup
+#+SETUPFILE: org-notes-style/setupfile.org
 #+TITLE: ホーム
 
 * ホーム
