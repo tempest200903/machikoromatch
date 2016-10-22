@@ -10,6 +10,10 @@
 - [[file:sisetu-kyouka-tips.org][施設強化Tips]]
 - [[file:sisetu-sinka-tips.org][施設進化Tips]]
 - [[file:sisetu-sinka-katarogu.org][施設進化カタログ]]
-- [[file:sisetu-baikyaku-tips.org][施設売却カタログ]]
+- [[file:sisetu-baikyaku-tips.org][施設売却Tips]]
 - [[file:mission.org][ミッション情報]]
 - [[file:senjutu-tips.org][戦術Tips]]
+
+* memo
+
+
